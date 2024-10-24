@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Halaman Biodata</title>
+</head>
+<body>
+    <h1>Biodata</h1>
+    <p>Nama: <%= biodata.nama %></p>
+    <p>Umur: <%= biodata.umur %></p>
+    <p>Hobi:</p>
+    <ul>
+        <% biodata.hobi.forEach(hobi => { %>
+            <li><%= hobi %></li>
+        <% }); %>
+    </ul>
+    <p>Alamat: <%= biodata.alamat %></p>
+</body>
+</html>
